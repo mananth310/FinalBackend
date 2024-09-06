@@ -16,7 +16,6 @@ const courseSchema=new mongoose.Schema({
         type:Date,
         default:null
     }
-
 })
  const courseModel=mongoose.model("course",courseSchema);
  module.exports=courseModel;

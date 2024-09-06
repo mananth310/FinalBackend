@@ -13,7 +13,6 @@ const StudentSchema=new mongoose.Schema({
         type:String,
         default:"NA"
     }
-
 });
 const StudentModel=mongoose.model("student",StudentSchema)
 module.exports=StudentModel

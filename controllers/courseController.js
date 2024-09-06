@@ -18,5 +18,4 @@ exports.getCourseData= async (req,res,next)=>{
             course
         });
     }).catch(err=>console.log(err))
-
 }

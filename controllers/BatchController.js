@@ -14,8 +14,7 @@ exports.createBatch= async(req,res,next)=>{
                 await studentModel.updateOne({"_id":row._id},{$set:{"batch":batchId}})
                 .then((res)=>DataTransfer.json())
                 .catch((err)=>console.log(err))
-            ))
-            
+            ))            
         })
         .catch((err)=>console.log(err))
 }
@@ -31,5 +30,4 @@ exports.getBatchStaffWise=async(req,res,next)=>{
     })
     .then(batch=>res.json(batch))
     .catch(err=>console.log(err))
-
 }

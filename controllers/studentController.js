@@ -21,8 +21,7 @@ exports.loginCheck= async (req,res,next)=>{
                 res.json("incorrect password");
             }
     })
-    .catch(err=>console.log(err))
-    
+    .catch(err=>console.log(err))    
 }
 exports.getStudentdata= async(req,res,next)=>{
     await studentModel.find()
